@@ -9,9 +9,8 @@ dart pub add 'dartastic_opentelemetry_native:{"hosted":"https://pub.dartastic.io
 dart pub add 'dartastic_opentelemetry_dart_metrics:{"hosted":"https://pub.dartastic.io"}'
 ```
 
-and the same `dependency_overrides` entry for `dartastic_opentelemetry` as
-the app (see `dartastic-flutter-setup`, Step 2) when it uses any `otel_*`
-package.
+`otel_*` packages (`otel_postgres`, `otel_redis`, `otel_grpc` and the
+rest) come from pub.dev with a plain `dart pub add`.
 
 ## Start once, stop cleanly
 

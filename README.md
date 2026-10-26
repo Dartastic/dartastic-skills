@@ -4,16 +4,16 @@ Skills that teach coding agents to instrument Flutter and Dart apps well
 with Dartastic: what to install, where to initialize, how to name things,
 and how to check that the telemetry arrived.
 
-| Skill                           | What it covers                                                                            |
-|---------------------------------|-------------------------------------------------------------------------------------------|
-| `dartastic-flutter-setup`       | Packages, tokens, `DOTel.initialize`, screens, taps, sessions, replay, release builds     |
-| `dartastic-resource-attributes` | Service names, versions, environments, flavors, white-label clients                       |
-| `dartastic-errors-and-symbols`  | Uncaught and handled errors, crashes, obfuscated builds, publishing symbols               |
-| `dartastic-custom-telemetry`    | The app's own spans, metrics, logs and attribute keys                                     |
-| `dartastic-distributed-tracing` | App to server traces: Dart servers, Firebase Functions in Dart and TypeScript, CORS       |
-| `dartastic-webviews`            | Telemetry from pages inside a WebView                                                     |
-| `dartastic-integrations`        | `otel_*` packages for http, dio, routers, Firebase, state, logging; LLM and payment calls |
-| `dartastic-verify-telemetry`    | Proving it works with the Dartastic MCP server                                            |
+| Skill                           | What it covers                                                                          |
+|---------------------------------|-----------------------------------------------------------------------------------------|
+| `dartastic-flutter-setup`       | Packages, tokens, `DOTel.initialize`, screens, taps, sessions, replay, release builds   |
+| `dartastic-resource-attributes` | Service names, versions, environments, flavors, white-label clients                     |
+| `dartastic-errors-and-symbols`  | Uncaught and handled errors, crashes, obfuscated builds, publishing symbols             |
+| `dartastic-custom-telemetry`    | The app's own spans, metrics, logs and attribute keys                                   |
+| `dartastic-distributed-tracing` | App to server traces: Dart servers, Firebase Functions in Dart and TypeScript, CORS     |
+| `dartastic-webviews`            | Telemetry from pages inside a WebView                                                   |
+| `dartastic-integrations`        | The 651 open-source `otel_*` packages for libraries and services; LLM and payment calls |
+| `dartastic-verify-telemetry`    | Proving it works with the Dartastic MCP server                                          |
 
 ## Install in Claude Code
 

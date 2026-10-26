@@ -6,6 +6,19 @@ started it, and count the outcomes. OpenTelemetry has no payment
 conventions, so the keys live in the developer's own namespace (`acme.`),
 declared once as an enum (see `dartastic-custom-telemetry`).
 
+## Use the package when there is one
+
+`otel_stripe` (`tracedStripeCall(resource:, operation:, invoke:)`),
+`otel_revenuecat` (`tracedRevenueCatPurchase`, `tracedRevenueCatRestore`),
+`otel_in_app_purchase` (`tracedInAppPurchase(operation:, invoke:)`) and
+others in the "Payments, finance and commerce" section of `catalog.md`
+create the payment spans with the provider's attributes. Leave their
+optional `customerId` and `appUserId` parameters out unless the developer
+says to record them (see "Never record"). They don't count outcomes, so
+add the counter from this page around them.
+
+When pub cannot find the package yet, use the wrapper below.
+
 ## Never record
 
 Card numbers, CVCs, bank details, billing addresses, client secrets,

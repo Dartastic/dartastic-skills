@@ -68,21 +68,11 @@ flutter pub add 'dartastic_opentelemetry_native_flutter:{"hosted":"https://pub.d
 flutter pub add 'dartastic_opentelemetry_flutter_metrics:{"hosted":"https://pub.dartastic.io"}'
 ```
 
-Then add this to `pubspec.yaml` by hand, because every `otel_*`
-instrumentation package on pub.dev names the SDK from pub.dev, and pub takes
-a package from only one host:
-
-```yaml
-dependency_overrides:
-  dartastic_opentelemetry:
-    hosted: https://pub.dartastic.io
-    version: ^1.1.0-beta.17
-```
-
-This override is the normal state, not a workaround. Keep
-`dartastic_opentelemetry_native` and `dartastic_opentelemetry_native_flutter`
-on the same version: they release together. Run `flutter pub get` and
-confirm it resolves.
+Keep `dartastic_opentelemetry_native` and
+`dartastic_opentelemetry_native_flutter` on the same version: they release
+together. `otel_*` instrumentation packages come from pub.dev with a plain
+`flutter pub add otel_<name>`; they depend only on the OpenTelemetry API, so
+they need nothing else. Run `flutter pub get` and confirm it resolves.
 
 What each package is for:
 

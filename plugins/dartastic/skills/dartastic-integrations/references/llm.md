@@ -4,6 +4,21 @@ Instrument every call to a model, wherever it is made (the app, a
 server, a function), with one `CLIENT` span per call and a duration
 metric, using the OpenTelemetry GenAI conventions.
 
+## Use the package when there is one
+
+The catalog has packages for most model APIs: `otel_openai`,
+`otel_anthropic`, `otel_google_ai`, `otel_vertex_ai`, `otel_aws_bedrock`,
+`otel_azure_openai`, `otel_mistral`, `otel_groq`, `otel_cohere`,
+`otel_langchain` and more (the "AI, LLMs, speech and documents" section
+of `catalog.md`). Most offer a drop-in on the client, such as
+`client.chat.completions.createTraced(request)` in place of `create`, or a
+`traced...(request:, invoke:)` helper. They create the span with its
+GenAI attributes. They don't record the duration metric, so add the
+histogram from "A wrapper for any provider" below around them.
+
+When pub cannot find the package yet, or the app calls a model some other
+way, write the wrapper below.
+
 The GenAI conventions now live in their own OpenTelemetry repository, so
 the SDK's `GenAi` enum is deprecated. Until the SDK carries their new
 home, declare the keys once in the app, with the convention's exact
