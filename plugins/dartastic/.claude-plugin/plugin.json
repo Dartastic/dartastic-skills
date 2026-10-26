@@ -1,0 +1,12 @@
+{
+  "name": "dartastic",
+  "version": "1.0.0",
+  "description": "Instrument Flutter and Dart apps with Dartastic: setup, errors and symbols, custom telemetry, distributed tracing, WebViews, integrations, resource attributes, and verification with the Dartastic MCP.",
+  "author": {
+    "name": "Dartastic",
+    "url": "https://dartastic.io"
+  },
+  "homepage": "https://dartastic.io/help/ai-assistants",
+  "license": "Apache-2.0",
+  "keywords": ["flutter", "dart", "opentelemetry", "observability", "rum", "dartastic"]
+}

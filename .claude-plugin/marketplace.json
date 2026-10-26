@@ -1,0 +1,17 @@
+{
+  "name": "dartastic",
+  "owner": {
+    "name": "Dartastic",
+    "url": "https://dartastic.io"
+  },
+  "metadata": {
+    "description": "Skills for instrumenting Flutter and Dart apps with Dartastic."
+  },
+  "plugins": [
+    {
+      "name": "dartastic",
+      "source": "./plugins/dartastic",
+      "description": "Instrument Flutter and Dart apps with Dartastic: setup, errors and symbols, custom telemetry, distributed tracing, WebViews, integrations, resource attributes, and verification with the Dartastic MCP."
+    }
+  ]
+}
