@@ -101,6 +101,9 @@ Future<void> main() async {
   // Error capture, frame and startup metrics. Without this call no
   // uncaught error is recorded.
   await DartasticFlutterMetrics.start();
+  // Per-widget jank attribution: names the code behind janky frames.
+  // Nothing starts it for you.
+  DartasticJankAttributionReporter.start();
 
   runApp(MaterialApp(
     navigatorObservers: [
